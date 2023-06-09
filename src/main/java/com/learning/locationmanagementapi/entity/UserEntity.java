@@ -19,7 +19,6 @@ public class UserEntity {
     private String email;
     @Column(name = "MOBILE_NUMBER")
     private String mobileNumber;
-
     @Column(name = "PASSWORD")
     private String password;
 

@@ -10,4 +10,6 @@ public class LocationManagementApiApplication {
 		SpringApplication.run(LocationManagementApiApplication.class, args);
 	}
 
+
+
 }
