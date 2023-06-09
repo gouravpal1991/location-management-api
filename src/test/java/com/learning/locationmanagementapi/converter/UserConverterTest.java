@@ -9,13 +9,13 @@ import org.mockito.InjectMocks;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
-public class UserConverterTest {
+class UserConverterTest {
 
     @InjectMocks
     private UserConverter userConverter;
 
     @Test
-    public void test_convertModelToEntity(){
+    void test_convertModelToEntity(){
         UserModel userModel =new UserModel();
         userModel.setEmail("abc@gmail.com");
         userModel.setPassword("abc123");

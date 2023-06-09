@@ -10,9 +10,7 @@ import java.util.List;
 @ControllerAdvice
 public class CustomExceptionHandler {
     @ExceptionHandler(BusinessException.class)
-    public ResponseEntity<List<ErrorModel>> handleBusinessException(BusinessException businessException){
-        ResponseEntity<List<ErrorModel>> responseEntity =
-                new ResponseEntity<>(businessException.getErrorList(), HttpStatus.BAD_REQUEST);
-        return responseEntity;
+    public ResponseEntity<List<ErrorModel>> handleBusinessException(BusinessException businessException) {
+       return new ResponseEntity<>(businessException.getErrorList(), HttpStatus.BAD_REQUEST);
     }
 }

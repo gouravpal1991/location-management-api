@@ -1,15 +1,14 @@
 package com.learning.locationmanagementapi.exception;
 
+import lombok.Data;
+
 import java.util.List;
 
+@Data
 public class BusinessException extends Exception {
-    private List<ErrorModel> errorList;
+    private final transient List<ErrorModel> errorList;
 
     public BusinessException(List<ErrorModel> errorList) {
         this.errorList = errorList;
-    }
-
-    public List<ErrorModel> getErrorList() {
-        return errorList;
     }
 }
